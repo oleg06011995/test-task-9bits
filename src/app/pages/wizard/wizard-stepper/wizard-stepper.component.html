@@ -1,0 +1,4 @@
+<ul class="step-list">
+  <li class="step" [class.active]="index === currentStepIndex" *ngFor="let step of steps; let index = index;">{{step.name}}</li>
+</ul>
+<hr>

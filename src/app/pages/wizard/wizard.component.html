@@ -1,0 +1,8 @@
+<div class="wizard-wrapper">
+  <app-wizard-stepper [steps]="steps" [currentStepIndex]="currentStepIndex"></app-wizard-stepper>
+  <div class="step-content">
+    <h3>Step {{steps[currentStepIndex].name}}</h3>
+    {{steps[currentStepIndex].content}}
+  </div>
+  <app-wizard-footer (onBackClick)="onBackClick()" (onNextClick)="onNextClick()"></app-wizard-footer>
+</div>
